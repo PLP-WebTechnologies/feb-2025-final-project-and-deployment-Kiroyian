@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Elmurkeya Youth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div id="loader">
+  <img src="church-logo.png" alt="Elmurkeya Church Logo" />
+</div>
+
+<body>
+  <header>
+    <h1>Become a Member</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="notices.html">Notices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="return validateForm()" method="post">
+      <label>First Name:</label><br />
+      <input type="text" name="firstName" required /><br />
+
+      <label>Last Name:</label><br />
+      <input type="text" name="lastName" required /><br />
+
+      <label>Phone:</label><br />
+      <input type="tel" name="phone" required /><br />
+
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br />
+
+      <label>
+        <input type="checkbox" id="terms" />
+        I accept the terms and conditions of Elmurkeya Church of Christ
+      </label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elmurkeya Youth Fellowship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
